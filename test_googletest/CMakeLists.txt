@@ -19,6 +19,10 @@ file(GLOB_RECURSE SOURCES
 find_package(GTest)
 include(GoogleTest)
 
+# 查找 Eigen 库
+find_package(Eigen3 REQUIRED)
+
+
 add_executable(${PROJECT_NAME}
         ${SOURCES}
 )
@@ -30,6 +34,7 @@ target_link_directories(${PROJECT_NAME} PRIVATE
 
 target_link_libraries(${PROJECT_NAME} PRIVATE
         GTest::gtest
+        Eigen3::Eigen
 )
 
 if(UNIX)

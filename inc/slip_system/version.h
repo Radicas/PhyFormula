@@ -1,5 +1,5 @@
-#ifndef REDCGL_VERSION_H
-#define REDCGL_VERSION_H
+#ifndef SLIP_SYSTEM_VERSION_H
+#define SLIP_SYSTEM_VERSION_H
 
 // clang-format off
 
@@ -11,4 +11,4 @@
 
 #define PROJECT_VERSION "v0.4.0"
 
-#endif  // REDCGL_VERSION_H
+#endif  // SLIP_SYSTEM_VERSION_H

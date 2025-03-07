@@ -17,8 +17,6 @@ file(GLOB_RECURSE SOURCES
 
 # 查找GTest
 find_package(GTest)
-find_package(CGAL)
-
 include(GoogleTest)
 
 add_executable(${PROJECT_NAME}

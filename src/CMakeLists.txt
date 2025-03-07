@@ -40,25 +40,3 @@ install(TARGETS ${PROJECT_NAME}
         LIBRARY DESTINATION ${INSTALL_PATH}/bin
         ARCHIVE DESTINATION ${INSTALL_PATH}/bin
 )
-
-# ####### 自定义安装 ########
-# # 获取当前动态库
-# file(GLOB_RECURSE DLL ${CMAKE_HOME_PATH}/install/bin/*.dll)
-
-# message(STATUS "REDEDA_DEV_DIST path:" ${REDEDA_DEV_DIST})
-
-# if(REDEDA_DEV_DIST)
-# # 将当前动态库安装到DEV_DIST
-# install(FILES ${DLL} DESTINATION
-# ${REDEDA_DEV_DIST}
-# )
-
-# # 获取头文件
-# set(INC ${CMAKE_HOME_PATH}/inc/redcgl)
-
-# # 将头文件安装到DEV_DIST
-# install(DIRECTORY ${INC} DESTINATION
-# ${REDEDA_DEV_DIST}/rededa/include/rededa
-# )
-# endif ()
-# #########################
